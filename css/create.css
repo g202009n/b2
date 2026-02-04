@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #d6d6d6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 100vh;
+}
+
+#cont{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #4e4e4e;
+    height: 85vh;
+    width: 85vw;
+    border-radius: 17px;
+
+}
+
+
+#div1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+#h2p{
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-top: 1rem;
+}
+
+#div1 form{
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    width: 80%;
+}
+
+.input1{
+    color: #d6d6d6;
+    background-color: #535353;
+    padding-left: 9px;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    height: 2.5rem; 
+    width: 100%;
+    margin-top: .7rem;
+    border: solid #000 1.9px;
+}
+
+.input1::placeholder{
+    color: #c5c5c5;
+}
+
+.input1:focus {
+    border: solid #000 2.3px;
+} 
+
+#divformform{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#divform a{
+    text-decoration: none;
+    color: #000;
+}
+
+#div1 form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    background-color: #535353;
+    border: solid #1a1a1a 2px;
+    height: 4vh;
+    width: 5rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+#div1 form button:hover{
+    color: #ececec;
+    cursor: pointer;
+    background-color: #6b6b6b;
+}
+
+#div1 footer{
+    display: flex;
+    padding-left: 1rem;
+    margin-top: 1.5rem;
+}
+
+#div1 footer a{
+    font-size: 1.2rem;
+}
+
+#div2{
+    flex: 1;
+    height: 95%;
+    border-radius: 14px;
+    background-image: url(../earthmover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1rem;
+    display: none;
+}
+
+@media (min-width:1024px) {
+    #div1 form{
+        width: 80%;
+    }
+
+    #div2{
+        display: block;
+    }
+    
+}
